@@ -1,0 +1,6 @@
+('resources',
+ 'resources',
+ [],
+ 'DATA',
+ [('resources\\img.png', 'resources\\img.png', 'DATA'),
+  ('resources\\IMG_8776.ICO', 'resources\\IMG_8776.ICO', 'DATA')])
