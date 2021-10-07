@@ -9,3 +9,4 @@
 
 実行形式にする場合はライブラリのpyinstallerインストール後にcompile.batを実行
 
+VailDEC3はライブラリなどの
