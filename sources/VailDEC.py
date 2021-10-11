@@ -291,8 +291,8 @@ window.configure(bg=backclr)
 window.resizable(False, False)
 
 # 背景画像とアイコンの設定
-iconfile = 'IMG_8776.ICO'
-# window.iconphoto(False, tkinter.PhotoImage(file=iconfile))
+iconfile = resourcePath('resources/IMG_8776.ICO')
+window.iconbitmap(iconfile)
 window.attributes("-topmost", False)
 try:
     
