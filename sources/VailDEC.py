@@ -33,7 +33,7 @@ def resourcePath(filename):
 # 暗号化
 def btn_click(pass1):
     iDir = ""
-    window.withdraw()
+    # window.withdraw()
     # var=config.loadconf()
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("", "*")]
@@ -41,14 +41,14 @@ def btn_click(pass1):
     import shutil
     import tempfile
     if file=="":
-        window.deiconify()
+        # window.deiconify()
         return
     if file=="":
-        window.deiconify()
+        # window.deiconify()
         return
     if (" " in file):
         messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。\nこのソフトウェアはパス内の空白を処理できません')
-        window.deiconify()
+        # window.deiconify()
         return
     n=decker.comzip(file,pass1)
     if n==0:
@@ -59,7 +59,7 @@ def btn_click(pass1):
         messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
     if n==-2:
         messagebox.showerror('エラー', '対応していないファイルの可能性があります')        
-    window.deiconify()
+    # window.deiconify()
     return 
 
 
@@ -105,14 +105,14 @@ def btn5_click(file,pass1):
 def btn2_click(pass1):
     iDir = ""
     n=-1
-    window.withdraw()
+    #window.withdraw()
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("DEC Files", "*.dec")]
     file = tkinter.filedialog.askopenfilename(filetypes=fTyp,initialdir=iDir)
     import shutil
     import tempfile
     if file=="":
-        window.deiconify()
+        #window.deiconify()
         return
     ns=0
     n=decker.openzip(file,ns,pass1)
@@ -129,7 +129,7 @@ def btn2_click(pass1):
     if n==-3:
          
         messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
-    window.deiconify()
+    # window.deiconify()
     return
 
 def btn4_click(file,pass1):
@@ -293,7 +293,7 @@ window.resizable(False, False)
 # 背景画像とアイコンの設定
 iconfile = 'IMG_8776.ICO'
 # window.iconphoto(False, tkinter.PhotoImage(file=iconfile))
-window.attributes("-topmost", True)
+window.attributes("-topmost", False)
 try:
     
     if (var['Theme']=="None"):        
