@@ -1,15 +1,15 @@
 
 このスクリプトは以下のライブラリを使用します。
 
-PyCryptodome
+PyCryptodome　https://www.pycryptodome.org/en/latest
 
-pysha3
+pysha3　- https://github.com/tiran/pysha3
 
-pyminizip
+pyminizip - https://github.com/smihica/pyminizip
 
-pyinstaller
+pyinstaller - http://www.pyinstaller.org/
 
-pyperclip
+pyperclip - https://github.com/asweigart/pyperclip
 
 *********
 上記の他に必要なライブラリがある場合があります。
