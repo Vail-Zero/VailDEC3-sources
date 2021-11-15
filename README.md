@@ -11,3 +11,5 @@
 
 VailDEC3はライブラリなどの環境を整えれば、どのプラットフォームでも動かすことができます。
 (LinuxとWindows10で確認済み)
+
+Copyright © 2001-2020 Python Software Foundation; All Rights Reserved
