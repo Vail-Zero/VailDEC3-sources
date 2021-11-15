@@ -2,7 +2,8 @@ Copyright © 2001-2020 Python Software Foundation; All Rights Reserved
 Copyright (c) 2014, Al Sweigart
 All rights reserved.
 
-
+本ソフトウェアは以下のライブラリを使用しています。
+このソフトウェアのメインプログラムVailDEC.py)の著作権はすべてVail-Zeroに帰属し,各ライブラリの著作権は各製作者に帰属します
 ***各ライブラリ製作者様のドキュメント***
 PyCryptodome　https://www.pycryptodome.org/en/latest
 pysha3　- https://github.com/tiran/pysha3
