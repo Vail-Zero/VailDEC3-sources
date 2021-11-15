@@ -46,13 +46,9 @@ def btn_click(pass1):
     if file=="":
         # window.deiconify()
         return
-    if (" " in file):
-        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。\nこのソフトウェアはパス内の空白を処理できません')
-        # window.deiconify()
-        return
     n=decker.comzip(file,pass1)
     if n==0:
-        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。\nこのソフトウェアはパス内の空白を処理できません')
+        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。')
     if n==1:
         messagebox.showinfo('確認', '暗号化が終了しました!')
     if n==-3:

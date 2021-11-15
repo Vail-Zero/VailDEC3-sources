@@ -80,30 +80,21 @@ def comzip(file,pass1):
     
     # decファイル名の生成
     
-    filename=filename.replace(' ', '')
-    filename=filename.replace('\'', ' ')
-    filename = filename.strip()
+    #filename=filename.replace(' ', '')
+    #filename=filename.replace('\'', ' ')
+    #filename = filename.strip()
     name,ext = os.path.splitext(filename)
     finame=name+".dec"
     sf=os.path.dirname(filename)
-    sf=sf+"\\"
-    cdir=os.path.isdir(sf)
-    if cdir==False:
-        n=0
-        return n
-    else:
-        try:
-            os.chdir(sf)
-        except FileNotFoundError:
-            n =0
-            return n
+    cdir=os.path.isdir(repr(sf))
+        
+    os.chdir(sf)
     comfilesize(file)
     basename_without_ext = os.path.splitext(os.path.basename(filename))[0]
     basename_without_ext=basename_without_ext+".dec"
     basefiles=os.path.basename(filename)
-    
+    #basefiles="\""+basefiles+"\""
     try :
-        
         # 圧縮関係(英数字以外のファイル名もちゃんと圧縮できる)
         pyminizip.compress(basefiles.encode('cp932'),"\\".encode('cp932'),basename_without_ext.encode('cp932'),pass2,int(9))
     except FileNotFoundError:
@@ -135,21 +126,17 @@ def openzip(file,ns,pass1):
     else:
         filename=os.path.abspath(file)
     
-    filename=filename.replace(' ', '')
-    filename= filename.replace('\'', ' ')
-    filename = filename.strip()
+    #filename=filename.replace(' ', '')
+    #filename= filename.replace('\'', ' ')
+    #filename = filename.strip()
     sf=os.path.dirname(filename)
-    sf=sf+'/'
+    #sf="\""+sf+"\""
     cdir=os.path.isdir(sf)
-    if cdir==False:
-        n=0
+    try:
+        os.chdir(sf)
+    except FileNotFoundError:
+        n =0
         return n
-    else:
-        try:
-            os.chdir(sf)
-        except FileNotFoundError:
-            n =0
-            return n
     filesize(file)
     ext = os.path.splitext(filename)[1]
     name=os.path.splitext(os.path.basename(filename))[0]
