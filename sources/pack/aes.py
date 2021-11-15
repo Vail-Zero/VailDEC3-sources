@@ -1,7 +1,5 @@
 import Crypto.Cipher.AES as AES
 import Crypto.Util.Padding as PAD
-import mysql.connector
-
 import tkinter
 import hashlib
 from tkinter import messagebox
