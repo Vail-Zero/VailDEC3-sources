@@ -1,7 +1,7 @@
 
 このスクリプトは以下のライブラリを使用します。
-PyCryptodome　https://www.pycryptodome.org/en/latest
-pysha3　- https://github.com/tiran/pysha3
+PyCryptodome
+pysha3
 pyminizip 
 pyperclip
 
