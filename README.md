@@ -6,7 +6,7 @@
 
 <a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版</a>
 
-下のホームページからでもダウンロードが可能です。
+下のホームページからでもダウンロードが可能です。<br>
 <a href="http://gdec.starfree.jp/">ホームページ</a>
 
 実行に必要なライブラリについてはsourcesディレクトリ内のReadMe.txtを参照
