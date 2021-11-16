@@ -37,6 +37,7 @@ def btn_click(pass1):
     # var=config.loadconf()
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("", "*")]
+    iDir=os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
     file = tkinter.filedialog.askopenfilename(filetypes=fTyp,initialdir=iDir)
     import shutil
     import tempfile
@@ -61,6 +62,7 @@ def btn2_click(pass1):
     n=-1
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("DEC Files", "*.dec")]
+    iDir=os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
     file = tkinter.filedialog.askopenfilename(filetypes=fTyp,initialdir=iDir)
     import shutil
     import tempfile
