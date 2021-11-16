@@ -8,7 +8,7 @@
 <a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
 ---
 # screenshot
-<img src="./img/screenshot.PNG">
+<img src="./img/screenshot.PNG" width="400" height="253">
 
 ---
 ソースコードは外部ライブラリ関係を除きすべてここにホストされています。
