@@ -3,7 +3,6 @@
 =======
 
 PyCryptodome
-pysha3
 pyminizip 
 pyperclip
 
