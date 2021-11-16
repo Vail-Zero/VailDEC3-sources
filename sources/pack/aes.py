@@ -1,26 +1,11 @@
 import Crypto.Cipher.AES as AES
 import Crypto.Util.Padding as PAD
 import tkinter
-import hashlib
 from tkinter import messagebox
 import json
 from collections import OrderedDict
 import pprint
 import os
-def Load_json():
-    del list
-    file=os.path.isfile("./server.json")
-    if file==True:
-        with open('./server.json') as f:
-            list = json.load(f)
-    else:
-        root = tkinter.Tk()
-        root.withdraw()
-        messagebox.showerror('エラー', 'サーバー設定ファイルが見つかりません')
-        root.destroy()
-        root.mainloop()
-        sys.exit(1)
-    return list
 
 def read_key():
     from pack import key
@@ -35,24 +20,6 @@ def encrypt(ptext):
     data1 = PAD.pad(ptext.encode('ascii'), 16, 'pkcs7')
     cipher = aes.encrypt(data1)
     return cipher
-
-def encrypt2(ptext):
-    key = b'0123456789abcdef'
-    iv = b'0' * 16
-    aes = AES.new(key, AES.MODE_CBC, iv)
-    data1 = PAD.pad(ptext.encode('ascii'), 16, 'pkcs7')
-    cipher = aes.encrypt(data1)
-    return cipher
-
-def decrypts(cipher):
-    cipher=bytes(cipher,"utf-8")
-    iv=b'0'*16
-    key = b'0123456789abcdef'
-    aes = AES.new(key, AES.MODE_CBC, iv)
-    data2 = aes.decrypt(cipher)
-    plain = PAD.unpad(data2, 16, 'pkcs7')
-    return plain.decode('ascii')
-
 
 def crypto_text_to_hex(src_text, key):
     if src_text and key:

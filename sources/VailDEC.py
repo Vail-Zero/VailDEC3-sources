@@ -33,7 +33,7 @@ def resourcePath(filename):
 # 暗号化
 def btn_click(pass1):
     iDir = ""
-    # window.withdraw()
+    
     # var=config.loadconf()
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("", "*")]
@@ -41,10 +41,8 @@ def btn_click(pass1):
     import shutil
     import tempfile
     if file=="":
-        # window.deiconify()
         return
     if file=="":
-        # window.deiconify()
         return
     n=decker.comzip(file,pass1)
     if n==0:
@@ -55,121 +53,29 @@ def btn_click(pass1):
         messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
     if n==-2:
         messagebox.showerror('エラー', '対応していないファイルの可能性があります')        
-    # window.deiconify()
-    return 
-
-
-def btn5_click(file,pass1):
-    iDir = ""
-     
-   # pass1=getpass.getpass(' DEC File Password (英数字のみ) >> ')
-    fTyp = [("", "*")]
-    if file=="":
-        # window.deiconify()
-        return
-    try:
-        n=decker.comzip(file,pass1)
-    except:
-        n=0
-    if n==1:
-         
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showinfo('確認', '暗号化が終了しました!')
-        root.destroy()
-        root.mainloop() 
-    if n==-3:
-         
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
-        root.destroy()
-        root.mainloop() 
-    if n==-2:
-         
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showerror('エラー', '対応していないファイルの可能性があります')
-        root.destroy()
-        root.mainloop() 
     return 
 
 # 復号化関数
 def btn2_click(pass1):
     iDir = ""
     n=-1
-    #window.withdraw()
     var = {'Theme': "None", 'online':True,'cash':"None"}
     fTyp = [("DEC Files", "*.dec")]
     file = tkinter.filedialog.askopenfilename(filetypes=fTyp,initialdir=iDir)
     import shutil
     import tempfile
     if file=="":
-        #window.deiconify()
         return
     ns=0
     n=decker.openzip(file,ns,pass1)
     if n==0:
         messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。\nこのソフトウェアはパス内の空白を処理できません')
     if n==1:
-         
         messagebox.showinfo('確認', '復号化が終了しました!')
-         
-    if n==-2:
-         
+    if n==-2: 
         messagebox.showerror('エラー', 'パスワードが間違っています')
-         
     if n==-3:
-         
         messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
-    # window.deiconify()
-    return
-
-def btn4_click(file,pass1):
-    iDir = ""
-     
-    # pass1=getpass.getpass(' DEC File Password (英数字のみ) >> ')
-
-    if file=="":
-        window.deiconify()
-        return
-    ns=0
-     
-   
-    n=decker.openzip(file,ns,pass1)
-    if n==1:
-         
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showinfo('確認', '復号化が終了しました!')
-         
-        root.destroy()
-        root.mainloop()      
-         
-    if n==-2:
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showerror('エラー', 'パスワードが間違っています')
-         
-        root.destroy()
-        root.mainloop()
-         
-    if n==-3:
-        root = tkinter.Tk()
-        root.withdraw()
-        root.attributes("-topmost", True)
-        messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
-         
-        root.destroy()
-        root.mainloop()
-         
-    # os.system('clear')
-    #window.deiconify()
     return
         
 # 以下スレッド化
@@ -220,56 +126,6 @@ def btn04():
  
 # ここまで
 
-# ログインの判定
-v=False
-#v=regkey.read_reg()
-if (v==True):
-    i=0
-    
-    while True:
-        GUIl.LoginView()
-        if (GUIl.checkregdata()==False):
-             
-            i=i+1
-            root = tkinter.Tk()
-            root.attributes("-topmost", True)
-            root.withdraw()
-            messagebox.showerror('エラー', 'ユーザー名かパスワードが間違っています')
-             
-            root.destroy()
-            root.mainloop()
-            
-            if i==3:
-                
-                root = tkinter.Tk()
-                root.withdraw()
-                root.attributes("-topmost", True)
-                messagebox.showerror('エラー', '認証エラーが三回以上続きました。\n ソフトウェアを終了します')
-                GUIl.delcheck()
-                 
-                root.destroy()
-                root.mainloop()
-                sys.exit(1)
-            else:                
-                continue
-        else:
-            break
-
-
-def btn05():
-    
-    root = tkinter.Tk()
-    root.withdraw()
-    root.attributes("-topmost", True)
-    b=messagebox.askyesno('確認', '認証サーバを切り替えますか？')                
-    if b==False:
-        root.destroy()
-
-        return
-    regkey.write_websource()
-    root.destroy()
-    root.mainloop()
-
 # 画面初期化
 def put(event):
     import pyperclip
@@ -309,15 +165,13 @@ txt.place(x=130, y=200)
 label2 = ttk.Label(window, text='パスワード')
 label2.place(x=65, y=200)
 
+# ボタンの追加と配置
 btn4 = tkinter.Button(window, text="パスワード生成",command = btn04)
-
 btn4.place(x=278, y=18)
 
 btn = tkinter.Button(window, text="暗号化",command = btn,font=("", 20))
-
 btn.place(x=150, y=50)
 
 btn2 = tkinter.Button(window, text="復号化",command = btn2,font=("", 20))
-
 btn2.place(x=150, y=140)
 window.mainloop()
