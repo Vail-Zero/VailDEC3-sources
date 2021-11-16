@@ -1,16 +1,14 @@
 <h1>VailDEC3-sources</h1>
 
 <p>このソフトウェアは簡単に使用できることを目標に制作されたファイル暗号化ソフトウェアです。</p>
----
 <a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版</a>
-
 <p>下のホームページからでもダウンロードが可能です。<br></p>
 <a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
----
+<hr></hr>
 <h2>screenshot</h2>
 <img src="./img/screenshot.PNG" width="400" height="253">
 
----
+<hr></hr>
 ソースコードは外部ライブラリ関係を除きすべてここにホストされています。
 実行に必要なライブラリについてはsourcesディレクトリ内のReadMe.txtを参照
 (またReadMe.txtに記載されているテンプレートでpackディレクトリ内にkey.pyをしてください)
