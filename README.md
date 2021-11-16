@@ -2,7 +2,7 @@
 
 <p>このソフトウェアは簡単に使用できることを目標に制作されたファイル暗号化ソフトウェアです。</p>
 <a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版</a>
-<p>下のホームページからでもダウンロードが可能です。<br></p>
+<p>下のホームページからでもダウンロードが可能です。</p>
 <a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
 <hr></hr>
 <h2>screenshot</h2>
