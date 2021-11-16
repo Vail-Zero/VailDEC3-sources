@@ -1,13 +1,13 @@
 
 このスクリプトは以下のライブラリを使用します。
 
-PyCryptodome - https://www.pycryptodome.org/en/latest
+PyCryptodome
 
-pysha3 - https://github.com/tiran/pysha3
+pysha3
 
-pyminizip - https://github.com/smihica/pyminizip
+pyminizip
 
-pyperclip - https://github.com/asweigart/pyperclip
+pyperclip
 =======
 PyCryptodome
 pysha3
@@ -20,7 +20,7 @@ pyinstallerを除く上記すべてのライブラリはスクリプトの実行
 
 実行ファイルにする場合、上記ライブラリをインストール後「compile.bat」を実行してください。
 このソフトウェアのソースコードまたは完成品をコピーた場合（独自の変更を行っていない場合を除く)に
-そのコピーをオリジナルと偽ってはいけません
+互換性の都合上そのコピーをオリジナルと偽って配布してはいけません
 
 key.py テンプレート
 key1={"key1":"2225040938076260","key2":"x38fK9e4ckTIMzXb"}
