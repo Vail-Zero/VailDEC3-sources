@@ -2,19 +2,18 @@
 このスクリプトは以下のライブラリを使用します。
 
 PyCryptodome
-
 pysha3
-
 pyminizip
-
 pyperclip
+
 =======
+
 PyCryptodome
 pysha3
 pyminizip 
 pyperclip
 
-*********
+=======
 上記の他に必要なライブラリがある場合があります。
 pyinstallerを除く上記すべてのライブラリはスクリプトの実行に必須となっています。
 
