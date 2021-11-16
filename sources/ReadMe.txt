@@ -1,5 +1,6 @@
 
 このスクリプトは以下のライブラリを使用します。
+<<<<<<< HEAD
 
 PyCryptodome - https://www.pycryptodome.org/en/latest
 
@@ -8,6 +9,12 @@ pysha3 - https://github.com/tiran/pysha3
 pyminizip - https://github.com/smihica/pyminizip
 
 pyperclip - https://github.com/asweigart/pyperclip
+=======
+PyCryptodome
+pysha3
+pyminizip 
+pyperclip
+>>>>>>> 01fc535e63adcfd76be34bedf6c427abb7b68c46
 
 *********
 上記の他に必要なライブラリがある場合があります。
