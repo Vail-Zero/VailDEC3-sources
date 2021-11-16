@@ -1,11 +1,5 @@
 
 このスクリプトは以下のライブラリを使用します。
-
-PyCryptodome
-pysha3
-pyminizip
-pyperclip
-
 =======
 
 PyCryptodome
