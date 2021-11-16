@@ -1,6 +1,6 @@
 <h1>VailDEC3-sources</h1>
 
-<p>このソフトウェアは簡単に使用できることを目標に制作されたファイル暗号化ソフトウェアです。</p>
+<p>このソフトウェアは簡単に使用できることを目標に制作されたシンプルなファイル暗号化ソフトウェアです。</p>
 <a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版</a>
 <p>下のホームページからでもダウンロードが可能です。</p>
 <a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
