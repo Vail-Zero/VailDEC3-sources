@@ -7,7 +7,7 @@
 下のホームページからでもダウンロードが可能です。<br>
 <a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
 ---
-# screenshot
+screenshot
 <img src="./img/screenshot.PNG" width="400" height="253">
 
 ---
