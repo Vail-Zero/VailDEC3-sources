@@ -4,3 +4,6 @@ PyCryptodome
 pyminizip 
 pyperclip
 =======
+
+pyinstaller:実行ファイルにする場合にインストールしてください。
+
