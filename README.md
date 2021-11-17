@@ -6,7 +6,7 @@ File Encrypt Software
 
 インストーラーなどのアーカイブも、Releseで配布してありますが、 以下の公式サイトでも配布しております。そちらかもどうぞ。
 <p><a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a></p>
-<p><a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/.0.0">Windowsインストーラ版(release)</a></p>
+<p><a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/2.0.0">Windowsインストーラ版(release)</a></p>
 
 <hr></hr>
 <h2>screenshot</h2>
