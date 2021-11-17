@@ -5,8 +5,8 @@ File Encrypt Software
 <p>フリーソフトウェアとして配布され、ソースコード自体も BSD 3-Clause Licenseにてここでオープンソース化しております。
 
 インストーラーなどのアーカイブも、Releseで配布してありますが、 以下の公式サイトでも配布しております。そちらかもどうぞ。
-<a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a>
-<a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版(release)</a>
+<p><a href="http://gdec.starfree.jp/">http://gdec.starfree.jp/</a></p>
+<p><a href="https://github.com/Vail-Zero/VailDEC3-sources/releases/tag/1.0.0">Windowsインストーラ版(release)</a></p>
 
 <hr></hr>
 <h2>screenshot</h2>
