@@ -17,10 +17,57 @@ from tkinter import messagebox
 import webbrowser
 # from pack import regkey
 global txt
-
+from pack import PassBox
 # 画像の後ろの背景色設定
 backclr="#9aff9a"
 
+args=sys.argv
+if len(args)==2:
+    pb = PassBox.PswdBox()
+    pass1=str(pb.pswd)
+    if os.path.isfile(args[1])==True:
+        r, e = os.path.splitext(args[1])
+        file=args[1]
+        if e==".dec":
+            ns=0
+            n=decker.openzip(file,ns,pass1)
+        else:
+            n=decker.comzip(file,pass1)
+        if e==".dec":
+            root = tkinter.Tk()
+            root.withdraw()
+            root.attributes("-topmost", True)
+            if n==0:
+                messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。')
+            if n==1:
+                messagebox.showinfo('確認', '復号化が終了しました!')
+            if n==-2: 
+                messagebox.showerror('エラー', 'パスワードが間違っています')
+            if n==-3:
+                messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
+            root.destroy()
+            root.mainloop()
+        else:
+            root = tkinter.Tk()
+            root.withdraw()
+            root.attributes("-topmost", True)
+            if n==0:
+                messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。')
+            if n==1:
+                messagebox.showinfo('確認', '暗号化が終了しました!')
+            if n==-3:
+                messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
+            if n==-2:
+                messagebox.showerror('エラー', '対応していないファイルの可能性があります')            
+            root.destroy()
+            root.mainloop()
+    else:
+        root = tkinter.Tk()
+        root.withdraw()
+        root.attributes("-topmost", True)  
+        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。')            
+        root.destroy()
+        root.mainloop()
 var = {'Theme': "None", 'online':True,'cash':"None"}
 # リソース読み込み関数
 def resourcePath(filename):
@@ -71,7 +118,7 @@ def btn2_click(pass1):
     ns=0
     n=decker.openzip(file,ns,pass1)
     if n==0:
-        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。\nこのソフトウェアはパス内の空白を処理できません')
+        messagebox.showerror('エラー', '指定されたファイルまたはディレクトリが見つかりません。')
     if n==1:
         messagebox.showinfo('確認', '復号化が終了しました!')
     if n==-2: 
