@@ -85,6 +85,21 @@ def comzip(file,pass1):
         
     os.chdir(sf)
     comfilesize(file)
+    from pack import filecheck
+    chf=filecheck.FileWarnings2(file)
+    if chf==True:
+        root = tkinter.Tk()
+        root.withdraw()
+        Messagebox = messagebox.askquestion('確認', "同名のファイルが存在します。\nファイルは上書きされますがよろしいですか?", icon='warning')
+        if Messagebox == 'yes':
+            pass
+        else:
+            root.destroy()
+            return
+
+        print('')
+        root.destroy()
+        root.mainloop() 
     basename_without_ext = os.path.splitext(os.path.basename(filename))[0]
     basename_without_ext=basename_without_ext+".dec"
     basefiles=os.path.basename(filename)
@@ -132,6 +147,21 @@ def openzip(file,ns,pass1):
     name=os.path.splitext(os.path.basename(filename))[0]
     ext=str(ext)
     name=name+".dec"
+    from pack import filecheck
+    chf=filecheck.FileWarnings(file)
+    if chf==True:
+        root = tkinter.Tk()
+        root.withdraw()
+        Messagebox = messagebox.askquestion('確認', "同名のファイルが存在します。\nファイルは上書きされますがよろしいですか?", icon='warning')
+        if Messagebox == 'yes': #If関数
+            pass
+        else:
+            root.destroy()
+            return
+        print('')
+        root.destroy()
+        root.mainloop() 
+
     cd2=os.path.isfile(filename)
     if filename=="" or name=="":
         filename="file nots"
