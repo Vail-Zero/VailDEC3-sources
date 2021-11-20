@@ -188,6 +188,9 @@ def openzip(file,ns,pass1):
     except PermissionError:
         n=-3
         return n
+    except BadZipFile:
+        n=4
+        return n
     else:
         n=1
         return n

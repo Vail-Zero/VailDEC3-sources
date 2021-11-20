@@ -125,6 +125,8 @@ def btn2_click(pass1):
         messagebox.showerror('エラー', 'パスワードが間違っています')
     if n==-3:
         messagebox.showerror('エラー', 'ファイルはアクセスが制限されています')
+    if n==4:
+        messagebox.showerror('エラー', 'ファイルが破損している可能性があります。\n元データでもう一度暗号化しなおしてください。\nこのファイルを他人から受け取った場合は、正式なファイルのコピーをもう一度取得してください')
     return
         
 # 以下スレッド化
