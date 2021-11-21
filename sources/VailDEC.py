@@ -199,12 +199,15 @@ window.iconbitmap(iconfile)
 window.attributes("-topmost", False)
 txt = tkinter.Entry(font=("",15),show='*')
 txt.place(x=130, y=200)
-label2 = ttk.Label(window, text='パスワード')
-label2.place(x=65, y=200)
+#label2 = ttk.Label(window, text='パスワード')
+#label2.place(x=65, y=200)
 
 # ボタンの追加と配置
 btn4 = tkinter.Button(window, text="パスワード生成",command = btn04)
 btn4.place(x=300, y=18)
+
+label3 = ttk.Label(window, text='パスワードを下に入力してからボタンを押してください')
+label3.place(x=101, y=180)
 
 btn = tkinter.Button(window, text="暗号化",command = btn,font=("", 25))
 btn.place(x=90, y=100)
