@@ -10,7 +10,7 @@ File Encrypt Software
 
 <hr></hr>
 <h2>screenshot</h2>
-<img src="./img/screenshot.PNG" width="400" height="253">
+<img src="./img/screenshot.PNG" width="451" height="300">
 本ソフトウェアでファイルに設定したパスワードを忘れた場合、作者でも解読は不可能です。
 <br>
 ※本ソフトウェアで暗号化したファイルは同じVailDEC3でのみ復号化が可能です。
