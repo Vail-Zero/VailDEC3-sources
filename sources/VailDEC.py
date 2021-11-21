@@ -204,7 +204,7 @@ label2.place(x=65, y=200)
 
 # ボタンの追加と配置
 btn4 = tkinter.Button(window, text="パスワード生成",command = btn04)
-btn4.place(x=350, y=18)
+btn4.place(x=300, y=18)
 
 btn = tkinter.Button(window, text="暗号化",command = btn,font=("", 25))
 btn.place(x=90, y=100)
