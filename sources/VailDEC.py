@@ -19,7 +19,7 @@ import webbrowser
 global txt
 from pack import PassBox
 # 画像の後ろの背景色設定
-backclr="#9aff9a"
+backclr=""
 
 args=sys.argv
 if len(args)==2:
@@ -188,41 +188,27 @@ def put(event):
 # メインウインドウを作成
 
 window = tkinter.Tk()
-window.geometry("400x253")
+window.geometry("451x300")
 window.title("VailDEC ファイル暗号化ソフト")
-window.configure(bg=backclr)
+#window.configure(bg=backclr)
 window.resizable(False, False)
 
 # 背景画像とアイコンの設定
 iconfile = resourcePath('resources/IMG_8776.ICO')
 window.iconbitmap(iconfile)
 window.attributes("-topmost", False)
-try:
-    
-    if (var['Theme']=="None"):        
-        background =tkinter.PhotoImage(file=resourcePath('resources/img.png'))
-    else:
-        background =tkinter.PhotoImage(file=var['Theme'])
-
-    bg = tkinter.Canvas(window,width=400,height=253)
-    bg.pack()
-    bg.config(borderwidth = -2)
-    bg.create_image(200,130,image=background)
-except:
-    pass
-
-txt = tkinter.Entry(font=("",10),show='*')
+txt = tkinter.Entry(font=("",15),show='*')
 txt.place(x=130, y=200)
 label2 = ttk.Label(window, text='パスワード')
 label2.place(x=65, y=200)
 
 # ボタンの追加と配置
 btn4 = tkinter.Button(window, text="パスワード生成",command = btn04)
-btn4.place(x=278, y=18)
+btn4.place(x=350, y=18)
 
-btn = tkinter.Button(window, text="暗号化",command = btn,font=("", 20))
-btn.place(x=150, y=50)
+btn = tkinter.Button(window, text="暗号化",command = btn,font=("", 25))
+btn.place(x=90, y=100)
 
-btn2 = tkinter.Button(window, text="復号化",command = btn2,font=("", 20))
-btn2.place(x=150, y=140)
+btn2 = tkinter.Button(window, text="復号化",command = btn2,font=("", 25))
+btn2.place(x=250, y=100)
 window.mainloop()
