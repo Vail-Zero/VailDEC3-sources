@@ -9,13 +9,10 @@ import threading
 import os
 import sys
 from pack import passgen
-# from pack import config
-# from pack import GUIl
 from tkinter import *
 from tkinter import ttk 
 from tkinter import messagebox
 import webbrowser
-# from pack import regkey
 global txt
 from pack import PassBox
 # 画像の後ろの背景色設定
@@ -199,8 +196,6 @@ window.iconbitmap(iconfile)
 window.attributes("-topmost", False)
 txt = tkinter.Entry(font=("",15),show='*')
 txt.place(x=130, y=200)
-#label2 = ttk.Label(window, text='パスワード')
-#label2.place(x=65, y=200)
 
 # ボタンの追加と配置
 btn4 = tkinter.Button(window, text="パスワード生成",command = btn04)
