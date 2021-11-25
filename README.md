@@ -1,4 +1,6 @@
 File Encrypt Software
+<br>
+操作説明や詳細情報はこのリポジトリの<a href="https://github.com/Vail-Zero/VailDEC3-sources/wiki">Wiki</a>に記載されています。
 <h1>VailDEC3-sources</h1>
 
 <p>このソフトウェアは簡単に使用できることを目標に制作された操作が簡単なファイル暗号化ソフトウェアです。</p>
