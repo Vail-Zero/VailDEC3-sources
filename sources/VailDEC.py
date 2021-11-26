@@ -186,7 +186,7 @@ def put(event):
 
 window = tkinter.Tk()
 window.geometry("451x300")
-window.title("VailDEC ファイル暗号化ソフト")
+window.title("VailDEC3")
 #window.configure(bg=backclr)
 window.resizable(False, False)
 
